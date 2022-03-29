@@ -13,10 +13,12 @@ print()
 suma = 0
 for i in lista : 
     suma += i[1]
-print(f"Promedio {suma / len(lista)}")
+promedio = 0 if len(lista) == 0 else suma / len(lista)
+print(f"Promedio {promedio}")
 
 print()
-for i in lista :
-    if i[1] < suma / len(lista) :
-        print(f"{i[0]} esta por debajo del promedio")
+if len(lista) != 0 :
+    for i in lista :
+        if i[1] < suma / len(lista) :
+            print(f"{i[0]} esta por debajo del promedio")
 

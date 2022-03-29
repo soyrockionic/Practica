@@ -11,12 +11,11 @@ def ingreso_notas() :
 
 
 def calcular_promedio(notas) :
-    
     suma = 0
     for i in notas :
         suma += notas[i]
-
-    return suma / len(notas)
+    promedio = 0 if len(notas) == 0 else suma / len(notas)
+    return promedio
 
 
 def menores_al_prom(notas) :

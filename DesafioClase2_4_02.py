@@ -16,9 +16,9 @@ print()
 suma = 0
 for i in dicci :
     suma += dicci[i]
-
-print(f"Promedio {suma / len(dicci)}")
+promedio = 0 if len(dicci) == 0 else suma / len(dicci)
+print(f"Promedio {promedio}")
 
 for i in dicci :
-    if dicci[i] < suma / len(dicci) :
+    if dicci[i] < promedio :
         print(f"{i} esta por debajo del promedio")

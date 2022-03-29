@@ -17,8 +17,7 @@ promedio = 0 if len(lista) == 0 else suma / len(lista)
 print(f"Promedio {promedio}")
 
 print()
-if len(lista) != 0 :
-    for i in lista :
-        if i[1] < promedio :
-            print(f"{i[0]} esta por debajo del promedio")
+for i in lista :
+    if i[1] < promedio :
+        print(f"{i[0]} esta por debajo del promedio")
 

@@ -12,7 +12,6 @@ mis_bandas = []
 layout = [[sg.Input()], [sg.Button("OOK")]]
 window = sg.Window("Elementos basicos", layout, margins=(80,60))
 event, values = window.read()
-window.close()
 
 while values[0] != "fin":
     try:
